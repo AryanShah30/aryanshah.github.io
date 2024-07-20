@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="icon" href="bot.png" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Personal Portfolio </title>
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico.ico">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/dfb5da906e.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li> <a href="#header"> Home </a></li>
+                    <li> <a href="#about"> About </a></li>
+                    <li> <a href="#services"> Experience </a></li>
+                    <li> <a href="#portfolio"> Projects </a></li>
+                    <li> <a href="#contact"> Contact </a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <i class="fa-regular fa-moon" id="icon"></i>
+            <div class="header-text">
+                <p> AI & ML Enthusiast </p>
+                <h1> Hi, I'm <span>Aryan</span><br> Shah From Pune</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----ABOUT----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/about-me-pic.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title"> About Me </h1>
+                    <p> I'm Aryan Shah, a pre-final year Computer Science and Engineering student at VIT University, Vellore with a keen interest in Web Development, Artificial Intelligence and the latest innovations in computer science. Currently, I'm interning
+                        at AutomationEdge, where I am actively working on various data science projects, building on my previous experience as a Data Science Intern.
+                        <br>In addition to my technical pursuits, I hold the position of Vice Chairperson and Media Head of IET-VIT.
+                        <br>I'm also a national level chess player with multiple achievements. </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links" onclick="opentab('education')"> Education </p>
+                        <p class="tab-links" onclick="opentab('achievements')"> Achievements </p>
+                        <p class="tab-links active-link" onclick="opentab('skills')"> Technical Skills </p>
+                        <p class="tab-links" onclick="opentab('proficiencies')"> Proficiencies </p>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - 2026</span>
+                                <br>BTech, Computer Science from Vellore Institute of Technology
+                              <br> CGPA: 9.23</li>
+                            <li><span>2020 - 2022</span>
+                                <br>D.A.V. Public School
+                              <br> Grade: 92.8% in Class 12 (CBSE)</li>
+                            <li><span>2010 - 2020</span>
+                                <br>Wisdom World School
+                              <br> Grade: 96.8% in Class 10 (CISCE)</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="achievements">
+                        <ul>
+                            <li><span> 9th U16 National Schools Chess Championship 2019</span>
+                                <br> 1 gold at Aurangabad, Maharashtra </li>
+                            <li><span> 65th U17 SGFI National Chess Championship 2019 </span>
+                                <br> 2 gold at Kolkata, West Bengal</li>
+                            <li><span> U17 CISCE National Chess Championship 2019 </span>
+                                <br> 1 gold at Amritsar, Punjab </li>
+                            <li><span> U8 Asian Youth Chess Championship 2012 </span>
+                                <br> 2 silver, 2 bronze at Hikkaduwa, Sri Lanka </li>
+                            <li><span> U7 ONGC Asian Schools Chess Championship 2011 </span>
+                                <br> Finished 5th at Delhi </li>
+                            <li><span> U7 National Chess Championship 2011 </span>
+                                <br> Finished 4th at Pune, Maharashtra </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                      <ul>
+                          <li><span>Generative AI & Advanced Language Models</span>
+                              <br>Generative AI Techniques
+                              <br>Large Language Models (LLMs)
+                              <br>Model Training and Fine-Tuning</li>
+                          <li><span>Data Science & Analytical Expertise</span>
+                              <br>Exploratory Data Analysis (EDA)
+                              <br>Machine Learning
+                              <br>Deep Learning Architectures
+                              <br>Data Visualization and Interpretation
+                              <br>Statistical and Predictive Analysis</li>
+                          <li><span>Web Development & Design</span>
+                              <br>Front-End Technologies
+                              <br>Responsive and Adaptive Design
+                              <br>User Interface (UI) & User Experience (UX) Design
+                              <br>Web Performance Optimization</li>
+                      </ul>
+                  </div>
+                    <div class="tab-contents" id="proficiencies">
+                      <ul class="skills-list">
+                        <li class="skill-item">Python</li>
+                        <li class="skill-item">Java</li>
+                        <li class="skill-item">C</li>
+                        <li class="skill-item">C++</li>
+                        <li class="skill-item">HTML</li>
+                        <li class="skill-item">JavaScript</li>
+                        <li class="skill-item">CSS</li>
+                        <li class="skill-item">SQL</li>
+                        <li class="skill-item">React</li>
+                        <li class="skill-item">Verilog</li>
+                        <li class="skill-item">MATLAB</li>
+                        <li class="skill-item">Assembly</li>
+                      </ul>
+                      
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-----SERVICES----->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My Experience </h1>
+            <div class="services-list">
+                <div>
+                    <img src="images/automation-edge.png">
+                    <h2> Intern</h2>
+                    <p> Jul 2024 - Present </p>
+                    <p> Pune, Maharashtra, India &#8226; Remote </p>
+                    <a href="https://www.linkedin.com/in/aryanashah/details/experience/" target="_blank"> Learn more  </a>
+                </div>
+                <div>
+                    <img src="images/iet.png">
+                    <h1> Vice Chairperson and Media Head </h1>
+                    <br><p> Jan 2024 - Present </p>
+                    <p> Vellore, Tamil Nadu, India &#8226; On-site </p>
+                    <a href="https://www.linkedin.com/in/aryanashah/details/experience/" target="_blank"> Learn more  </a>
+                </div>
+                <div>
+                    <img id="valuedx" src="images/valuedx.png">
+                    <h2> Data Science Intern </h2>
+                    <p> Jun 2024 - Jul 2024 </p>
+                    <p> Pune, Maharashtra, India &#8226; On-site </p>
+                    <a href="https://www.linkedin.com/in/aryanashah/details/experience/" target="_blank"> Learn more  </a>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/in/aryanashah/details/experience/" target="_blank" class="btn btn3"> See more</a>
+        </div>
+    </div>
+
+    <!-----PORTFOLIO----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title"> My Projects </h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/olympic-rings-paris_h.webp">
+                    <div class="layer">
+                        <h3> Summer Olympics Data Analysis </h3>
+                        <p> Performed an in-depth exploratory data analysis of the Olympic Games spanning from 1896 to 2016. The project highlights key insights into medal distributions, athlete demographics, and the impact of host cities, with a focus on
+                            trends in gender participation and the evolution of Olympic sports. This analysis serves as a valuable resource for sports analysts, data scientists, and researchers.</p>
+                        <a href="https://summer-olympics-data-analysis.streamlit.app/?" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/exam.jpg">
+                    <div class="layer">
+                        <h3> gradifyVIT </h3>
+                        <p> Developed a website to equip VIT students with essential tools for grade prediction, GPA calculation, CGPA analysis, and attendance tracking, enabling precise academic management. </p>
+                        <a href="https://gradifyvit.github.io/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/brain.png">
+                    <div class="layer">
+                        <h3> LLM Web Applications </h3>
+                        <p> Developed advanced Generative AI applications using various large language models (LLMs)
+                            <br>
+                            <br> Some of the applications built:
+                            <br>Multi-Language Invoice Extractor, Article Analyzer, Blog Generator, Resume Analyzer, Document QA, CSV Insights </p>
+                        <a href="https://multi-language-invoice-extractor.streamlit.app/" target="_blank"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://www.linkedin.com/in/aryanashah/details/projects/" target="_blank" class="btn btn3"> See more</a>
+        </div>
+    </div>
+
+    <!-----CONTACT----->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p> <i class="fa fa-envelope-o"></i> aryanshah1957@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/aryanashah/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AryanShah30" target="_blank"><i class="fa fa-github"></i></a>
+                    </div>
+                    <a href="AryanShahResume.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input id="text" type="text" name="Name" placeholder="Your Name" required>
+                        <input id="email" type="email" name="Email" placeholder="Your Email" required>
+                        <textarea id="yourmessage" name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="Submit" class="btn btn2"> Submit </button>
+                    </form>
+                    <span id="msg"> </span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="file.js"></script>
+
+</body>
+
+</html>
